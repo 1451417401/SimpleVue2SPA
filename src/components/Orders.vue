@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>this is orders</h2>
+        <h2>订单列表</h2>
         <router-link :to="'/login'">go login</router-link>
     </div>
 </template>

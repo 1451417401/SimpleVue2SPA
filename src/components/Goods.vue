@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>this is goods</h2>
+        <h2>商品列表</h2>
         <div>
              <button @click='increment'>Increment +1</button>
              <button @click='decrement'>decrement -1</button>

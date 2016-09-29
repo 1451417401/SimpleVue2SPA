@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>this is setting</h2>
+        <h2>基础信息</h2>
         <router-link :to="'/login'">go login</router-link>
     </div>
 </template>
