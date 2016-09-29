@@ -1,4 +1,6 @@
-# notice
+#description:
+vue2/vue-router2/vuex2/webpack/element
+
 
 1. `npm install`
 2. `npm run start`
