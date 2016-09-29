@@ -6,3 +6,4 @@ vue2/vue-router2/vuex2/webpack/element
 
 	 npm install
 	 npm run start
+###localhost:8899
