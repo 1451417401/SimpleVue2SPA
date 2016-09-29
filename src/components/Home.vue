@@ -1,8 +1,8 @@
 <template>
     <div>
-        <el-row>
+        <el-row class="tac">
             <el-col :span="8">
-                <h5>home</h5>
+                <h5>带 icon</h5>
                 <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleopen" @close="handleclose">
                     <el-submenu index="1">
                         <template slot="title"><i class="el-icon-message"></i>导航一</template>
@@ -18,28 +18,25 @@
                     <el-menu-item index="3"><i class="el-icon-setting"></i>导航三</el-menu-item>
                 </el-menu>
             </el-col>
-            <!-- <el-col :span="16">
+            <el-col :span="16">
                 <div>
                      <router-view></router-view>
                 </div>
-            </el-col> -->
-        <el-row>
-        <div>
-            <router-view></router-view>
-        </div>
-        
+            </el-col>
+        </el-row>
     </div>
 </template>
 <script>
     
     export default {
         methods: {
-            handleopen(){
+            handleopen(index){
+                console.dir(index);
 
             },
-            handleclose(){
-
-            }
+            handleclose(index){
+                console.dir(index)
+            }   
           }
     }
 </script>
