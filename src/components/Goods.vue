@@ -4,6 +4,7 @@
         <div>
              <button @click='increment'>Increment +1</button>
              <button @click='decrement'>decrement -1</button>
+             <button @click='decrementAsync'>decrementAsync -1(延迟一秒执行)</button>
               <h3>Count is {{ count }}</h3>
         </div>
         <router-link :to="'/login'">go login</router-link>
@@ -16,15 +17,20 @@
     export default {
         methods: {
             increment () {
-              store.commit('increment')
+              this.$store.commit('increment')
             },
             decrement () {
-                store.commit('decrement')
+                this.$store.commit('decrement')
+            },
+            decrementAsync () {
+                this.$store.dispatch('decrementAsync')
             }
           },
         computed: {
             count () {
-                return store.getters.getCount
+                //return store.getters.getCount
+                //return store.state.count
+                return this.$store.state.count
             }
         }
     }
